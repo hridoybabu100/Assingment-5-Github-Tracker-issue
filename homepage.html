@@ -36,13 +36,16 @@
     <header class="bg-base-100">
         <div
             class="navbar bg-base-100 shadow-b-sm flex-col sm:flex sm:flex-row justify-between gap-5 items-center w-[90%] mx-auto">
-            <div class="flex items-center gap-1 ">
+            <div class="flex flex-col sm:flex-row items-center gap-1 ">
                 <img class="w-[50px] h-[50px]" src="./assets/github-logo.png" alt="">
                 <a class="btn btn-ghost text-xl font-semibold text-[#1F2937]">GitHub Issues Tracker</a>
             </div>
 
-            <div class="">
-                <input id="search-issue" type="text" placeholder="Search issues..." class="input input-bordered w-24 md:w-auto" />
+            <div class="flex gap-2 items-center flex-col sm:flex-row">
+               <div class="inline-block pl-2 border rounded-md">
+                <i class="fa-solid fa-magnifying-glass gray "></i>
+                 <input id="search-issue" type="text" placeholder="Search issues..." class="input rounded-md border-none py-2 outline-none w-25 md:w-auto" />
+               </div>
                 <button id="search-issue-btn" class="btn btn-primary"><i class="fa-solid fa-plus"></i> New Issues</button>
             </div>
 
