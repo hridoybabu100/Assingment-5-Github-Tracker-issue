@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github||Issues||Loggin</title>
+
+    <!-- tailwind + Daisy  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Gooogle- Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fav - Icon  -->
+    <link rel="shortcut icon" href="./assets/github-logo.png" type="image/x-icon">
+
+    <!-- Fav- Icon  -->
+     <link rel="shortcut icon" href="./assets/github-logo.png" type="image/x-icon">
+    <!-- Style - CSS  -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <header class="bg-base-100">
+        <div
+            class="navbar bg-base-100 shadow-b-sm flex-col sm:flex sm:flex-row justify-between gap-5 items-center w-[90%] mx-auto">
+            <div class="flex items-center gap-1 ">
+                <img class="w-[50px] h-[50px]" src="./assets/github-logo.png" alt="">
+                <a class="btn btn-ghost text-xl font-semibold text-[#1F2937]">GitHub Issues Tracker</a>
+            </div>
+
+            <div class="">
+                <input id="search-issue" type="text" placeholder="Search issues..." class="input input-bordered w-24 md:w-auto" />
+                <button id="search-issue-btn" class="btn btn-primary"><i class="fa-solid fa-plus"></i> New Issues</button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main class="w-[96%] mx-auto lg:w-[85%]">
+
+        <section class="bg-base-100 p-3 mt-10 rounded-md">
+            <button onclick="toggolFilterBn('all-btn'); toggolCart('all')" id="all-btn" class="btn">all</button>
+            <button onclick="toggolFilterBn('open-btn') ; toggolCart('open')" id="open-btn" class="btn ">Open</button>
+            <button onclick="toggolFilterBn('closed-btn') ; toggolCart('closed')" id="closed-btn"
+                class="btn ">Closed</button>
+        </section>
+
+        <section class="bg-base-100 p-3 mt-4 rounded-md">
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-10">
+                <div class="flex items-center gap-2">
+                    <div class="bg-[#ECE4FF] w-12 h-12 flex items-center justify-center rounded-full">
+                        <img class="w-6 h-6" src="./assets/Aperture.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="text-[#1F2937] text-[20px] font-semibold"><span id="total-count">50</span> Issues
+                        </h1>
+                        <p class="gray">Track and manage your project issues</p>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+
+                    <span class="ml-2"><span class="text-[#00A96E] text-[10px] "><i
+                                class="fa-solid fa-circle pr-4"></i></span class="text-[#1F2937]">Open</span>
+
+
+                    <span><span class="text-[#A855F7] text-[10px]"><i
+                                class="fa-solid fa-circle pr-4"></i></span>Closed</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-10 bg-[#FBFBFB] p-3">
+            <div id="issuesContainer" class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 ">
+                <!-- Dynamiclly All issues Gula Asbe  -->
+                <!-- <div class="bg-base-100 p-3 space-y-3 rounded-md shadow-md">
+                    <div class="flex justify-between items-center gap-4">
+                        <img src="./assets/Open-Status.png" alt="">
+                        <div class="badge bg-[#FEECEC] text-[12px] text-[#EF4444] font-medium">High</div>
+                    </div>
+                    <div class="space-y-3">
+                        <h1 class="text-[#1F2937] font-semibold">Fix navigation menu on mobile devices</h1>
+                        <p class="gray line-clamp-2">The navigation menu doesn't collapse properly on mobile devices...</p>
+                    </div>
+                    <div class="flex items-center  gap-4">
+                        <div class="badge bg-[#FEECEC] text-[12px] text-[#EF4444] font-medium">BUG</div>
+                        <div class="badge badge-soft bg-[#FDE68A] text-[#D97706]">HELP WANTED</div>
+                    </div>
+                    <div class="pt-6">
+                        <p class="gray">#1by john_doe</p>
+                        <p class="gray">1/15/2024</p>
+                    </div>
+                </div> -->
+
+            </div>
+        </section>
+
+        <section>
+            <div id="spinner-container" class=" flex justify-center items-center py-30 hidden">
+                <span class="loading loading-bars loading-md"></span>
+                <span class="loading loading-bars loading-lg"></span>
+                <span class="loading loading-bars loading-xl"></span>
+            </div>
+        </section>
+
+        <section>
+            <!-- Open the modal using ID.showModal() method -->
+            <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+            <dialog id="modal_card" class="modal modal-bottom sm:modal-middle">
+                <div id="modal_container" class="modal-box space-y-3 max-w-[clamp(20rem,90vw,43.75rem)]">
+
+                    <!-- sob modal akhane ache -->
+
+
+                </div>
+            </dialog>
+        </section>
+
+    </main>
+
+
+
+
+    <!-- JavaScript Connected  -->
+    <script src="./homepage.js"></script>
+</body>
+
+</html>

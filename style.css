@@ -1,0 +1,12 @@
+*{
+    font-family: "Geist", sans-serif;
+}
+body{
+    background-color: #F8FAFC;
+    height: 100vh;
+    
+}
+.gray{
+    color: #64748B;
+    font-size: 1rem;
+}

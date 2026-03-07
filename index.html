@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github||Issues||Loggin</title>
+
+    <!-- tailwind + Daisy  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Gooogle- Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fav - Icon  -->
+    <link rel="shortcut icon" href="./assets/github-logo.png" type="image/x-icon">
+    <!-- Style - CSS  -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body class="flex justify-center items-center">
+
+
+    <section class="bg-[#FFFFFF] w-[400px] md:w-[500px] pt-10 mx-auto h-[700px] shadow-md rounded-md p-6">
+        <div class="">
+            <div class="text-center space-y-3 pb-7">
+                <img class="w-25 h-25 mx-auto " src="./assets/github-logo.png" alt="">
+                <h1 class="text-[#1F2937] text-[24px] font-semibold">GitHub Issues Tracker</h1>
+                <p class="gray">Sign in to manage your issues</p>
+            </div>
+            <div>
+                <fieldset class="fieldset  ">
+
+
+                    <label class="label text-black font-semibold">Username</label>
+                    <input id="input-Text-Btn" type="text" class="input gray w-full required" value="admin"
+                        placeholder="Enter Username" />
+                    <p class="text-[#4A00FF] pb-1">Default: admin</p>
+
+                    <label class="label text-black font-semibold">Password</label>
+                    <input id="input-pin" type="password" class="input gray w-full required"
+                        placeholder="Enter Password" />
+                    <p class="text-[#4A00FF] pb-1">Default: admin123</p>
+
+                    <button id="singIn-btn"
+                        class="btn btn-neutral mt-4 text-white font-semibold bg-[#4A00FF] border-none">Sing
+                        In</button>
+                </fieldset>
+            </div>
+            <div class="flex items-center py-3">
+                <div class="border-t flex-grow gray"></div>
+                <span>OR</span>
+                <div class="border-t flex-grow gray"></div>
+            </div>
+            <div class="">
+                <h2 class="gray text-center py-2">Demo Credentials:</h2>
+                <div class="bg-[#F8FAFC] p-5 text-center rounded-md ">
+                    <h2 class="font-semibold text-black">Username: <span class="gray">admin</span></h2>
+                    <h2 class="font-semibold text-black">Password: <span class="gray">admin123</span></h2>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- JavaScript Connected  -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
