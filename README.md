@@ -96,13 +96,28 @@
   ## const
    A variable declaration that is block-scoped, cannot be re-declared, and its value cannot be re-assigned after initialization.
 
-    - 2️⃣ What is the spread operator (...)?
+    -   What is the spread operator (...)?
 
       JavaScript-এ spread operator (...) use kora hoi array ba object er elements/properties alada kore (expand kore) onno kuno array ba object er valuse bosanur jonne.
-      
+
     - 3️⃣ What is the difference between map(), filter(), and forEach()?
+
+    ## map()
+     - map() array er protiti element er upor function calai and new  array return kore.
+
+    ## filter()
+    - filter() condition onujayi array Thake matching elements nie new array return kore.
+
+    ## forEach()
+    - forEach() array এর protit element er upor function calai kintu kuno calai array return kore.
+
     - 4️⃣ What is an arrow function?
+
+    - Arrow function holo JavaScript- er ekti short syntax function, ja => sing die use kora hoi. eti mainly function likhte help kore . eti normal function er tulonai onnketa choto and clean code. 
+
+
     - 5️⃣ What are template literals?
+    - Template literals holo JavaScript-এ string  lekher ekti upai jeikhne backtick ( ) use kora hoi and ${} die variable  baexpression simply string er modde addition kora jai. 
 
 
 ---
