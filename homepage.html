@@ -41,9 +41,9 @@
                 <a class="btn btn-ghost text-xl font-semibold text-[#1F2937]">GitHub Issues Tracker</a>
             </div>
 
-            <div class="flex gap-2 items-center flex-col sm:flex-row">
+            <div class="flex gap-2 items-center ">
                <div class="inline-block pl-2 border rounded-md">
-                <i class="fa-solid fa-magnifying-glass gray "></i>
+                <i class="fa-solid fa-magnifying-glass gray"></i>
                  <input id="search-issue" type="text" placeholder="Search issues..." class="input rounded-md border-none py-2 outline-none w-25 md:w-auto" />
                </div>
                 <button id="search-issue-btn" class="btn btn-primary"><i class="fa-solid fa-plus"></i> New Issues</button>
@@ -55,7 +55,7 @@
 
     <main class="w-[96%] mx-auto lg:w-[85%]">
 
-        <section class="bg-base-100 p-3 mt-10 rounded-md">
+        <section class="bg-base-100 p-3 mt-10 rounded-md flex flex-col sm:flex-row gap-2">
             <button onclick="toggolFilterBn('all-btn') ; toggolCart('all')" id="all-btn" class="btn">all</button>
             <button onclick="toggolFilterBn('open-btn') ; toggolCart('open')" id="open-btn" class="btn ">Open</button>
             <button onclick="toggolFilterBn('closed-btn') ; toggolCart('closed')" id="closed-btn"class="btn ">Closed</button>
