@@ -86,7 +86,20 @@
 
 - Create a readme file and answer this question on your own. Don’t copy-paste from Google or any AI chatbot. 
     - 1️⃣ What is the difference between var, let, and const?
+
+  ## var
+   A variable declaration in JavaScript that is function-scoped, can be re-declared.
+
+  ## let
+    A variable declaration that is block-scoped, cannot be re-declared in the same scope, but its value can be re-assigned.
+
+  ## const
+   A variable declaration that is block-scoped, cannot be re-declared, and its value cannot be re-assigned after initialization.
+
     - 2️⃣ What is the spread operator (...)?
+
+      JavaScript-এ spread operator (...) use kora hoi array ba object er elements/properties alada kore (expand kore) onno kuno array ba object er valuse bosanur jonne.
+      
     - 3️⃣ What is the difference between map(), filter(), and forEach()?
     - 4️⃣ What is an arrow function?
     - 5️⃣ What are template literals?
